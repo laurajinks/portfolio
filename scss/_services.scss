@@ -2,3 +2,91 @@
 .service-box {
   max-width: 400px;
 }
+
+#skills {
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+#contact {
+  img {
+    width: 50px;
+    height: auto;
+  }
+}
+
+#about {
+  .aboutContainer {
+    display: flex;
+    // justify-content: space-around;
+    width: 90vw;
+    margin: 0 auto;
+    height: 100%;
+
+    .imgContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .aboutContent {
+      margin: 0px 10em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-box-caption-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  #about {
+    .aboutContainer {
+      // justify-content: space-around;
+      
+      .aboutContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+          width: 40vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutContent {
+    width: 80vw;
+    p {
+      margin: 2em;
+      width: 80vw;
+    }
+  }
+}

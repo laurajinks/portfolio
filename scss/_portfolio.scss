@@ -4,6 +4,16 @@
   display: block;
   max-width: 650px;
   margin: 0 auto;
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
   .portfolio-box-caption {
     position: absolute;
     bottom: 0;
